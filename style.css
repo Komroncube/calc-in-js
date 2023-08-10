@@ -1,0 +1,88 @@
+.calc {
+    width: 300px;
+    height: 500px;
+    border: 1px solid #000;
+    margin: 50px auto;
+    background: #000;
+    border-radius: 20px;
+    color: #fdfdfd;
+    font-family: Arial;
+    display: grid;
+    padding: 18px;
+    box-shadow: 4px 4px 6px #4f4f4f;
+}
+
+.calc-screen {
+    height: 125px;
+    position: relative;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+.calc-screen p {
+    text-align: right;
+    font-size: 4em;
+    margin:0;
+}
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "ac del percent division"
+    "seven eight nine multi"
+    "four five six minus"
+    "one two three plus"
+    "plus-minus zero dot equal";
+    grid-gap: 7px;
+    justify-items: center;
+    align-items: 7px;
+}
+.btn {
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 63px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+    user-select:none
+
+}
+.btn:hover {
+    filter: brightness(130%);
+}
+.btn:active {
+    filter: brightness(90%);
+}
+.bg-grey {
+    background-color: #a6a6a6;
+}
+
+.bg-dark-grey {
+    background-color: #333;
+}
+
+.bg-orange {
+    background-color: #ff9501;
+}
+
+
+.btn.plus-minus {
+    grid-area: plus-minus;
+}
+
+.btn.percent {
+    grid-area: percent;
+}
+
+.btn.division {
+    grid-area: division;
+} 
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+}
